@@ -1,4 +1,5 @@
-#### rps_stpete_ishii_160th_place_solution_20210225 ####
+##### rps_stpete_ishii_160th_place_solution_20210225 #####
+
 
 import pandas as pd
 import numpy as np
@@ -21,8 +22,7 @@ class agent():
         else:
             return int(self.history_step(history))
 
-         
-############## additional agents  ##############
+
 class rps(agent):
     def __init__(self, shift=0):
         self.shift = shift
@@ -30,8 +30,7 @@ class rps(agent):
     def rps(self, history):
         return self.shift % 3
 
-      
-############## origial agents added ##############
+
 class j8(agent):
 
     def my_agent_j8(self, observation, configuration):
@@ -82,8 +81,7 @@ class j8(agent):
 
             return next_hand
 
-        
-############## origial agents added ##############
+
 class hx(agent):
     def __init__(self, shift=0):
         self.shift = shift
@@ -143,8 +141,6 @@ class hx(agent):
 
             return next_hand 
 
-
-    
 
 class mirror_shift(agent):
     def __init__(self, shift=0):
@@ -379,3 +375,5 @@ def multi_armed_bandit_agent (observation, configuration):
     step = agents[best_agent].step(history)
     
     return log_step(step, history, best_agent)
+
+
