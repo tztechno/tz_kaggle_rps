@@ -1,6 +1,6 @@
 ### tz_kaggle_rps
 
-# rock-paper-scissors
+# rock-paper-scissors solution
 
 rps_stpete_ishii_160th_place_solution_20210225
 
